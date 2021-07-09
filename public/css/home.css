@@ -1,0 +1,174 @@
+/* --- MOBILE --- */
+
+.home{
+    font-family: "Roboto";
+    background-color: var(--color-grisClaro);
+}
+/* Main */
+.home main .banner{
+    padding:0;
+    margin:0;
+}
+
+.home main .banner img{
+    width: 100%;
+    height: auto;
+    margin:0;
+    padding: 0px;
+}
+
+.home .main{
+    width:90%;
+    margin-left:2%;
+    margin-right: 2%;
+
+}
+
+.home .articulosVisita{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.home .articulosOfertas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.home .main img{
+    height: 200px;
+    width: 200px;
+    margin: 5px auto 5px;
+    display: block;
+}
+
+.home .articulosOfertas article{
+    margin: 10px auto 10px;
+    background-color: white;
+    width:100%;
+}
+
+.home .articulosVisita article{
+    margin: 10px auto 10px;
+    background-color: white;
+    width:100%;
+}
+
+.home .main article img{
+    width: 100%;
+    height: auto;
+}
+
+.home .main article section i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color:#39b54a;
+}
+
+.home .main article section i:hover{
+    transform: rotateZ(360deg);
+    transition: 2s;
+}
+
+.home .main .precioDescuento{
+    display: flex;
+    align-items: flex-end;
+}
+
+.home .main .precioDescuento p{
+    width:30%;
+}
+
+.home .main .precioDescuento span{
+    width:70%;
+}
+
+.home .main span{
+    color: var(--color-verde)
+}
+
+.home .main h4{
+    color: white;
+    margin: 5px 0;
+}
+
+.home .main h4:hover{
+    color: var(--color-grisOscuro);
+transition: 1s;
+}
+
+.home .main section{
+    border: #ebebeb solid 1px;
+    padding: 15px;
+    position: relative;
+}
+.home .main h3{
+    font-size: 24px;
+    color: var(--color-grisOscuro);
+    text-align: center;
+}
+
+.home .main h4,span{
+font-size: 16px;
+}
+
+.home .main p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* --- TABLET --- */
+
+@media (min-width: 361px){
+
+/* Main*/
+.home .articulosOfertas article{
+    width:40%;
+}
+
+.home .articulosOfertas article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.home .articulosVisita article{
+    width:40%;
+}
+
+.home .articulosVisita article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.home .main .precioDescuento span{
+    text-align: center;
+}
+
+}
+
+/* --- DESKTOP --- */
+@media (min-width: 769px){
+
+
+    /* Main*/
+    .home .main h3{
+        font-size: 24px;
+        margin: 40px auto;
+    }
+
+    .home .articulosVisita article{
+        width:22%;
+    }
+
+    .home .articulosOfertas article{
+        width:22%;
+    }
+}
